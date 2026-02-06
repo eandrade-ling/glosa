@@ -19,13 +19,18 @@ permalink: /surtos
             <tbody>
                 {% for post in site.posts %}
                 <tr>
-                    <td class="post-date">{{ post.date | date: "%Y-%m-%d" }}</td>
+                    <td class="post-date" style="vertical-align: top;">
+                        {{ post.date | date: "%Y-%m-%d" }}
+                    </td>
                     <td>
                         <a href="{{ post.url }}" class="post-title">
                             > {{ post.title | downcase }}
                         </a>
+                        <div class="post-excerpt" style="margin-top: 5px; color: #666; font-size: 0.85rem; line-height: 1.4;">
+                            {{ post.excerpt | strip_html | truncatewords: 25 }}
+                        </div>
                     </td>
-                    <td class="post-tags">
+                    <td class="post-tags" style="vertical-align: top; text-align: right;">
                         {% if post.tags.size > 0 %}
                             {% for tag in post.tags %}
                                 [{{ tag | downcase }}]{% unless forloop.last %} {% endunless %}
