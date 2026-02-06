@@ -40,3 +40,11 @@ nav a:hover {
     color: #fdfdfd; 
     padding: 0 4px;
 }
+
+.header-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;    /* Mantém a proporção da imagem */
+    display: block;  /* Remove espaços indesejados abaixo da imagem */
+    margin: 2.5rem 0 4rem 0; /* Espaçamento: top, right, bottom, left */
+    border: 1px solid #ddd; /* Borda sutil para dar um ar de "item de arquivo" */
+}
