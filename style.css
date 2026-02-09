@@ -26,7 +26,7 @@ main {
    LINKS DE CONTEÚDO (Geral)
    ========================================== */
 
-/* Estado padrão e visitado (idênticos conforme solicitado) */
+/* Estado padrão e visitado (idênticos) */
 article a, 
 article a:visited,
 .page-content a,
@@ -40,7 +40,7 @@ article a:hover,
 .page-content a:hover {
     color: #551a8b;
     text-decoration: underline;
-    background-color: transparent; /* Garante que não herde o fundo preto da nav */
+    background-color: transparent;
     padding: 0;
 }
 
@@ -80,7 +80,44 @@ h1 {
 }
 
 /* ==========================================
-   METADADOS E NAVEGAÇÃO
+   NAVEGAÇÃO GLOBAL (Menus e Footer)
+   ========================================== */
+
+nav, footer nav {
+    margin-bottom: 4rem;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+}
+
+nav a, footer a { 
+    display: inline-block; 
+    color: #1a1a1a; 
+    text-decoration: none; 
+    font-size: 0.9rem;
+    width: fit-content;
+}
+
+nav a:hover, footer a:hover { 
+    background-color: #1a1a1a; 
+    color: #fdfdfd; 
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+/* ==========================================
+   RODAPÉ (ESTRUTURA)
+   ========================================== */
+
+footer {
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+    border-top: 1px dashed #444;
+    padding-top: 2rem;
+}
+
+/* ==========================================
+   METADADOS
    ========================================== */
 
 .metadata { 
@@ -90,58 +127,58 @@ h1 {
     line-height: 1.4; 
 }
 
-nav {
-    margin-bottom: 4rem;
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 2rem; 
-}
-
-nav a { 
-    display: inline-block; 
-    color: #1a1a1a; 
-    text-decoration: none; 
-    font-size: 0.9rem;
-    width: fit-content;
-}
-
-nav a:hover { 
-    background-color: #1a1a1a; 
-    color: #fdfdfd; 
-    padding: 0 4px;
-    text-decoration: none;
-}
-
-/* ==========================================
-   RODAPÉ (FOOTER)
-   ========================================== */
-
-footer {
-    margin-top: 5rem;
-    padding-bottom: 2rem;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-}
-
-footer nav {
-    margin-bottom: 0; /* Remove a margem do nav original no footer */
-}
-
-footer a {
-    text-decoration: none;
-    color: #999;
-    font-size: 0.85rem;
-}
-
-footer a:hover {
-    color: #551a8b;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
 /* ==========================================
    PÁGINA .SURTOS (LOG DE POSTS)
    ========================================== */
 
 .log-posts table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.log-posts th {
+    color: #999;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.log-posts tr {
+    border-bottom: 1px solid #eee;
+}
+
+.log-posts td {
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+
+.log-posts .post-date {
+    color: #999;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.log-posts .post-title {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.log-posts .post-title:hover {
+    background-color: #1a1a1a;
+    color: #fdfdfd;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.log-posts .post-tags {
+    color: #999;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/* ==========================================
