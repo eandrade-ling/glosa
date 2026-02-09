@@ -23,6 +23,38 @@ main {
 }
 
 /* ==========================================
+   ESTILIZAÇÃO DE TÍTULOS E TEXTO (POSTS/SOBRE)
+   ========================================== */
+
+/* Título principal da página ou post */
+article h2, .page-content h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    display: block;
+}
+
+/* Subtítulos internos do post (ex: subtítulo_01) */
+article h3, .page-content h3,
+article h4, .page-content h4 {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #1a1a1a;
+    color: #fdfdfd;
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+/* Garante que parágrafos tenham espaçamento correto */
+article p, .page-content p {
+    margin-bottom: 1.2rem;
+}
+
+/* ==========================================
    LINKS DE CONTEÚDO (Geral)
    ========================================== */
 
@@ -180,5 +212,3 @@ footer {
     font-size: 0.8rem;
     text-align: right;
 }
-
-/* ==========================================
