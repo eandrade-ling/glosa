@@ -1,0 +1,36 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Bloqueio DeepSeek
+User-agent: DeepSeek
+Disallow: /
+
+# Bloqueio Google Gemini (Treinamento)
+User-agent: Google-Extended
+Disallow: /
+
+# Bloqueio OpenAI (ChatGPT)
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+# Bloqueio Anthropic (Claude)
+User-agent: AnthropicAI
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+
+# Bloqueio Common Crawl (Base de treino geral)
+User-agent: CCBot
+Disallow: /
+
+# Bloqueio Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: *
+Allow: /
