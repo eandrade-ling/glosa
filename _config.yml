@@ -1,3 +1,9 @@
-title: .glosa
-baseurl: "/glosa"
-url: "https://eandrade-ling.github.io"
+title: Glosa Lab
+url: "https://glosa-lab.github.io"
+baseurl: ""
+
+# Como você está criando o tema, garanta que o Jekyll ignore o que não deve
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
