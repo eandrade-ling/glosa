@@ -20,7 +20,7 @@ permalink: /surtos
                 {% for post in site.posts %}
                 <tr>
                     <td class="post-date">
-                        {{ post.date | date: "%Y-%m-%d" }}
+                        {{ post.date | date: "%d-%m-%y" }}
                     </td>
                     <td class="post-content">
                         <a href=".{{ post.url }}" class="post-title">
