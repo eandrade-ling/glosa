@@ -23,42 +23,47 @@ main {
 }
 
 /* ==========================================
-   ESTILIZAÇÃO DE TÍTULOS E TEXTO (POSTS/SOBRE)
+   ESTILO DO LOG (POSTS INTERNOS)
    ========================================== */
 
-/* Título principal da página ou post */
-article h2, .page-content h2 {
-    font-size: 1.6rem;
+.post-title-main {
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
-    letter-spacing: -1px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1.5px;
     display: block;
 }
 
-/* Subtítulos internos do post (ex: subtítulo_01) */
-article h3, .page-content h3,
-article h4, .page-content h4 {
-    font-family: "Courier New", Courier, monospace;
+.post-metadata {
+    color: #999;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.post-body h3 {
     background-color: #1a1a1a;
     color: #fdfdfd;
     display: inline-block;
     padding: 2px 8px;
     font-size: 1rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0 1rem 0;
     font-weight: normal;
 }
 
-/* Garante que parágrafos tenham espaçamento correto */
-article p, .page-content p {
-    margin-bottom: 1.2rem;
+.post-footer {
+    margin-top: 5rem;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    line-height: 1.2;
 }
 
 /* ==========================================
    LINKS DE CONTEÚDO (Geral)
    ========================================== */
 
-/* Estado padrão e visitado (idênticos) */
 article a, 
 article a:visited,
 .page-content a,
@@ -67,13 +72,11 @@ article a:visited,
     text-decoration: underline;
 }
 
-/* Mouse em cima (Roxo fechado) */
 article a:hover,
 .page-content a:hover {
     color: #551a8b;
     text-decoration: underline;
     background-color: transparent;
-    padding: 0;
 }
 
 /* ==========================================
@@ -88,12 +91,6 @@ article a:hover,
     margin-bottom: 4rem;
     flex-wrap: nowrap;
     padding-top: 2rem; 
-}
-
-.site-header a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
 }
 
 .header-icon {
@@ -127,14 +124,12 @@ nav a, footer a {
     color: #1a1a1a; 
     text-decoration: none; 
     font-size: 0.9rem;
-    width: fit-content;
 }
 
 nav a:hover, footer a:hover { 
     background-color: #1a1a1a; 
     color: #fdfdfd; 
     padding: 0 4px;
-    text-decoration: none;
 }
 
 /* ==========================================
@@ -146,17 +141,6 @@ footer {
     padding-bottom: 4rem;
     border-top: 1px dashed #444;
     padding-top: 2rem;
-}
-
-/* ==========================================
-   METADADOS
-   ========================================== */
-
-.metadata { 
-    color: #999; 
-    font-size: 0.8rem; 
-    margin-bottom: 4rem; 
-    line-height: 1.4; 
 }
 
 /* ==========================================
@@ -184,31 +168,21 @@ footer {
 
 .log-posts td {
     padding: 15px 10px;
-    vertical-align: middle;
 }
 
 .log-posts .post-date {
     color: #999;
     font-size: 0.85rem;
-    white-space: nowrap;
 }
 
 .log-posts .post-title {
     text-decoration: none;
     color: #1a1a1a;
     font-weight: bold;
-    font-size: 1rem;
 }
 
 .log-posts .post-title:hover {
     background-color: #1a1a1a;
     color: #fdfdfd;
     padding: 2px 4px;
-    text-decoration: none;
-}
-
-.log-posts .post-tags {
-    color: #999;
-    font-size: 0.8rem;
-    text-align: right;
 }
