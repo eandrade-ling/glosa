@@ -7,8 +7,6 @@ tags: [surtos]
 # YYYY-MM-DD-nome-do-post.md (ex: 2026-02-06-analise-morfemas.md)
 ---
 
-// início_do_log
-
 Aqui estou eu testando o site, né? Disse que não ia *mais* fazer **isso**, porque dá dor de cabeça, mas... mesmo que ninguém leia... não consigo. Não consigo me comunicar. Os pensamentos são muitos, muito grandes, para guardar.
 
 Então aqui estão.
@@ -18,5 +16,3 @@ Então aqui estão.
 
 - Ponto técnico A;
 - Ponto técnico B.
-
-// fim_do_log
