@@ -10,9 +10,3 @@ tags: [surtos]
 Aqui estou eu testando o site, né? Disse que não ia *mais* fazer **isso**, porque dá dor de cabeça, mas... mesmo que ninguém leia... não consigo. Não consigo *não* me comunicar. Os pensamentos são muitos, muito grandes, para guardar.
 
 Então aqui estão.
-
-### subtítulo_01
-(Use h3 para subdivisões)
-
-- Ponto técnico A;
-- Ponto técnico B.
